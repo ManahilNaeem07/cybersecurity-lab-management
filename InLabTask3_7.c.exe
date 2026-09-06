@@ -1,0 +1,45 @@
+#include <stdio.h>
+int main(){
+    char LabName [50];
+    int numofcomputers = 0;
+    int numofnetwork =0;
+    int numofsecurity =0;
+    float costpercomputer =0.00;
+    float costperdevice =0.00;
+    float annual = 0.00;
+    float ComputerCost = 0.00;
+    float NetworkCost = 0.00;
+    float total = 0.00;
+
+    printf("Lab Name: ");
+    scanf("%s", LabName);
+    printf("Number of computers: ");
+    scanf("%d", &numofcomputers);
+    printf("Number of Network Devices: ");
+    scanf("%d", &numofnetwork);
+    printf("Number of Security tools: ");
+    scanf("%d", &numofsecurity);
+    printf("Cost per computer: ");
+    scanf("%f", &costpercomputer);
+    printf("Cost per device: ");
+    scanf("%f", &costperdevice);
+    printf("Annual Software cost: ");
+    scanf("%f", &annual);
+
+    ComputerCost = costpercomputer * numofcomputers;
+    NetworkCost = numofnetwork * costperdevice;
+    total = ComputerCost + NetworkCost + annual;
+
+    printf("Lab Name: %s \n",LabName);
+    printf("Number of computers: %d \n",numofcomputers);
+    printf("Number of Network Devices: %d \n",numofnetwork);
+    printf("Number of Security Tools: %d \n",numofsecurity);
+    printf("Computer Cost: %f \n",ComputerCost);
+    printf("Network Cost: %f \n",NetworkCost);
+    printf("Software Cost: %f \n",annual);
+    printf("Total Lab Investment: %f \n",total);
+
+
+    
+
+}
